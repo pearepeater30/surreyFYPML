@@ -6,11 +6,11 @@ import numpy
 
 list = ['with_mask', 'without_mask']
 
-DATADIR = 'C:/Users/Nathan/Documents/FYPML/dataset'
+DATADIR = 'C:/Users/Nathan/Documents/FYPML Dataset/og_dataset'
 TEST_DATADIR = 'C:/Users/Nathan/Documents/FYPML/og_dataset'
 
-IMG_HEIGHT = 84
-IMG_LENGTH = 84
+IMG_HEIGHT = 64
+IMG_LENGTH = 64
 
 def create_training_data():
     features_list = []
@@ -94,7 +94,7 @@ def create_separate_testing_data():
 
 
 create_training_data()
-create_separate_testing_data()
+# create_separate_testing_data()
 
 
 

@@ -42,10 +42,9 @@ model.add(Dropout(0.25))
 
 #Flatten the convolutional data to feed to the fully-connected layer
 model.add(Flatten())
-model.add(Dropout(0.25))
 
 #Fully Connected Layer
-model.add(Dense(units=50, activation='relu'))
+model.add(Dense(units=100, activation='relu'))
 
 #Output Layer
 model.add(Dense(units=2, activation='softmax'))
@@ -72,4 +71,4 @@ test_eval = model.evaluate(X_test, y_test, verbose=0)
 print('Test loss:', test_eval[0])
 print('Test accuracy:', test_eval[1])
 
-model.save('saved_model/my_model')
+#model.save('saved_model/my_model')

@@ -6,8 +6,8 @@ import numpy
 
 list = ['with_mask', 'without_mask']
 
-DATADIR = 'C:/Users/Nathan/Documents/FYPML/LargeKaggleDataset/Train'
-TEST_DATADIR = 'C:/Users/Nathan/Documents/FYPML/og_dataset'
+DATADIR = 'C:/Users/Nathan/Documents/FYPML Dataset/LargeKaggleDataset/Train'
+TEST_DATADIR = 'C:/Users/Nathan/Documents/FYPML Dataset/og_dataset'
 
 IMG_HEIGHT = 84
 IMG_LENGTH = 84
@@ -93,7 +93,7 @@ def create_separate_testing_data():
     pickle_out.close()
 
 
-create_training_data()
+#create_training_data()
 create_separate_testing_data()
 
 
